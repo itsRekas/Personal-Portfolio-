@@ -100,6 +100,16 @@ const observerright = new IntersectionObserver((entries)=>{
         }
     });
 });
+const fillbar = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('fill');
+        }
+        else{
+            entry.target.classList.remove('fill');
+        }
+    });
+});
 const hiddenme2 = document.querySelectorAll('.Me2');
 hiddenme2.forEach((el)=>observerleft.observe(el));
 const hiddenme3 = document.querySelectorAll('.Me3');
@@ -108,3 +118,5 @@ const hiddenme4 = document.querySelectorAll('.Me4');
 hiddenme4.forEach((el)=>observerleft.observe(el));
 const hiddenme5 = document.querySelectorAll('.Me5');
 hiddenme5.forEach((el)=>observerright.observe(el));
+const progressfill = document.querySelectorAll('.skill-per');
+progressfill.forEach((el)=>fillbar.observe(el));
