@@ -110,6 +110,16 @@ const fillbar = new IntersectionObserver((entries)=>{
         }
     });
 });
+// const pullam = new IntersectionObserver((entries)=>{
+//     entries.forEach((entry)=>{
+//         if(entry.isIntersecting){
+//             showdownload();
+//         }
+//         else{
+//            hidedownload();
+//         }
+//     });
+// });
 const hiddenme2 = document.querySelectorAll('.Me2');
 hiddenme2.forEach((el)=>observerleft.observe(el));
 const hiddenme3 = document.querySelectorAll('.Me3');
@@ -120,3 +130,41 @@ const hiddenme5 = document.querySelectorAll('.Me5');
 hiddenme5.forEach((el)=>observerright.observe(el));
 const progressfill = document.querySelectorAll('.skill-per');
 progressfill.forEach((el)=>fillbar.observe(el));
+// const pullResume = document.querySelectorAll('.timeline-container');
+// pullResume.forEach((el)=>pullam.observe(el));
+
+// function showdownload(){
+//     const pull = document.querySelector('download');
+//     pull.style.opacity="1";
+// } 
+// Define the functions to show and hide the download element
+function showdownload() {
+    const downloadElement = document.getElementById('download'); // Assuming 'download' is the id of the element to show
+    if (downloadElement) {
+        downloadElement.style.display = 'block';
+    }
+}
+
+function hidedownload() {
+    const downloadElement = document.getElementById('download'); // Assuming 'download' is the id of the element to hide
+    if (downloadElement) {
+        downloadElement.style.display = 'none';
+    }
+}
+
+// Create the IntersectionObserver instance
+const pullam = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            showdownload();
+        } else {
+            hidedownload();
+        }
+    });
+});
+
+// Assuming you have an element with an id of 'target' to observe
+const targetElement = document.getElementById('timeline-container');
+if (targetElement) {
+    pullam.observe(targetElement);
+}

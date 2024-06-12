@@ -48,6 +48,14 @@
         width:100%;
     }
 }
+@keyframes fade{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
 html{
     scrollbar-width: thin;
     scrollbar-color: #CC9376 #17171b;
@@ -569,12 +577,12 @@ margin-bottom: 1vh;
     color:black;
 }
 #SkillsPage{
-    min-height:160vh;
+    min-height:220vh;
 }
 #SkillsPage h2{
      color:white;
      position:absolute;
-     top:0vh;
+     top:10vh;
      display:grid;
      grid-template-columns: repeat(3,1fr);
      column-gap: 1.6rem;
@@ -593,20 +601,25 @@ margin-bottom: 1vh;
     padding:0 10vh;
 }
 .skill{
-    height:10vh;
+    height:15vh;
     width:100%;
 }
 .skill-name{
     position:relative;
     background-color: rgba(0, 0, 0, 0);
     z-index: 2;
-    top:8vh;
+    top:12vh;
     left:-6vw;
     font-size:calc(1vh + 1vw);
     color:#402111;
     margin:2vw;
 }
+.skill-name img{
+    width:5vw;
+    height:5vw;
+}
 .skill-bar{
+    
     height:3.5vh;
     background:#17171b;
     border-radius: 3vw;
@@ -642,7 +655,239 @@ margin-bottom: 1vh;
 .fill{
     animation:fillbars 4s 1;
 }
+#ExperiencePage{
+    min-height:110vh;
+}
+#ExperiencePage h2{
+     color:white;
+     position:absolute;
+     top:0vh;
+     display:grid;
+     grid-template-columns: repeat(3,1fr);
+     column-gap: 1.6rem;
+     align-items: center;
+}
+#ExperiencePage h2::before, 
+#ExperiencePage h2::after{
+     content:"";
+     height:0.2vw;
+     display:block;
+     background-color: #CC9376;
+}
+.timeline-container {
+    max-width: 60vw;
+    margin: auto;
+    padding: 2vw;
+} 
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    list-style: none;
+}
+  
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 0.2vw;
+    background:#CC9376;
+    border-radius: 0.1vw;
+}
+  
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 2vw 4vw;
+    box-sizing: border-box;
+}
+  
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+  
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+  
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -0.5vw;
+    width: 10px;
+    height: 10px;
+    background: #402111;
+    border: 2px solid #CD7F32;
+    border-radius: 50%;
+}
+  
+.timeline-item:nth-child(even)::before {
+    right: auto;
+    left: -2vw;
+}
+  
+.timeline-date {
+    font-size: 1em;
+    color: #CD7F32;
+    margin-bottom: 5px;
+}
+  
+.timeline-content {
+    background: #0707075f;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(178, 44, 44, 0.1);
+    color:white;
+}
+  
+.timeline-content h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+  
+.timeline-content p {
+    margin-bottom: 1vh;
+}
+  
+.timeline-content ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.timeline-content ul li {
+    margin-bottom: 1vh;
+}
+  
+.timeline-content em {
+    font-style: italic;
+    color: #CC9376;
+}
+.download{
+    width:3vw;
+    height:3vw;
+    position:fixed;
+    top:80vh;
+    right:20vw;
+    background-color: black;
+    animation: fade 1s;
+}
 
+#ContactPage{
+    width:100%;
+    height:100vh;
+}
+#ContactPage h2{
+    color:white;
+    position:absolute;
+    top:10vh;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1.6rem;
+    align-items: center;
+}
+#ContactPage h2::before, 
+#ContactPage h2::after{
+     content:"";
+     height:0.2vw;
+     display:block;
+     background-color: #CC9376;
+}
+.contactleft {
+    position: relative; /* Relative positioning */
+    width: 30vw; /* Set width */
+    height: 60vh; /* Set height */
+    transform: translate(0,-40%); /* Translate position */
+    top: 50%; /* Position from top */
+    right:-17vw;
+    background: rgba(3, 3, 3, 0); /* Semi-transparent background */
+    border-radius: 2vw 2vw 2vw 2vw; /* Rounded corners */
+    z-index: 1;
+}
+
+/* Contact input styling */
+.contactInputs {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center align items */
+    justify-content: center; /* Center justify items */
+    background: rgba(255, 255, 255, 0.447); /* Semi-transparent background */
+    transition: ease 0.8s; /* Smooth transition */
+}
+
+/* Contact input hover effect */
+.contactInputs:hover {
+    background: rgba(255, 255, 255, 0.847); /* More opaque background */
+}
+
+/* Contact input placeholder styling */
+.contactInputs::placeholder,
+.contactInputs{
+    text-align: center; /* Center align text */
+    color: black; /* Text color */
+    font-family: 'Franklin Gothic Medium'; /* Font family */
+}
+
+/* First contact input styling */
+.contactInputs:nth-child(2) {
+    position: absolute; /* Absolute positioning */
+    border-radius: 2vw; /* Rounded corners */
+    height: 10%; /* Set height */
+    width: 80%; /* Set width */
+    left: 10%; /* Position from left */
+    top: 5%; /* Position from top */
+}
+
+/* Second contact input styling */
+.contactInputs:nth-child(3) {
+    position: absolute; /* Absolute positioning */
+    border-radius: 2vw; /* Rounded corners */
+    height: 10%; /* Set height */
+    width: 80%; /* Set width */
+    left: 10%; /* Position from left */
+    top: 20%; /* Position from top */
+}
+
+/* Third contact input styling */
+.contactInputs:nth-child(4) {
+    position: absolute; /* Absolute positioning */
+    border-radius: 2vw; /* Rounded corners */
+    height: 50%; /* Set height */
+    width: 80%; /* Set width */
+    left: 10%; /* Position from left */
+    top: 35%; /* Position from top */
+    transition: ease 1s; /* Smooth transition */
+}
+/* Third contact input hover effect */
+.contactInputs:nth-child(4):hover {
+    border-radius: 0; /* Remove rounded corners */
+}
+/* Submit button styling */
+.submitbtn {
+    position: absolute; /* Absolute positioning */
+    border-radius: 2vw; /* Rounded corners */
+    height: 10%; /* Set height */
+    width: 20%; /* Set width */
+    left: 40%; /* Center horizontally */
+    top: 87%; /* Position from top */
+    cursor: pointer; /* Pointer cursor */
+    transition: ease 0.7s; /* Smooth transition */
+    background: rgba(255, 255, 255, 0.447); /* Semi-transparent background */
+}
+/* Submit button hover effect */
+.submitbtn:hover {
+    background-color:#CC9376; /* Change background color */
+    color: black; /* Change text color */
+}
+.mailimg{
+    position:absolute;
+    z-index: 0;
+    width: 40vw;
+    top:50%;
+    opacity:0.2;
+    left:15vw;
+    transform: translate(0,-50%);
+}
 @media only screen and (max-width: 1025px){
     .backgroundimg{
         background-image:none;
