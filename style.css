@@ -68,6 +68,7 @@ html{
     padding:0;
     box-sizing:border-box;
     background-color: black;
+    font-family: "Roboto Slab", serif;
 }
 p{
     background-color: rgba(0, 0, 0, 0);
@@ -368,7 +369,7 @@ footer{
     width:100%;
 }
 #aboutsection{
-    height:360vh;
+    height:380vh;
 }
 .rekas{
     position:absolute;
@@ -416,7 +417,7 @@ footer{
 
 } 
 .Me3{
-    top:110vh;
+    top:115vh;
     left:50vw;
     color:#844b2e;
     width:30vw;
@@ -437,7 +438,7 @@ footer{
     box-shadow: -1vw 1vw 1vw 1vw #755341;
 } 
 .Me4{
-    top:180vh;
+    top:192vh;
     left:15vw;
     color:#844b2e;
     width:30vw;
@@ -458,7 +459,7 @@ footer{
     box-shadow: 1vw 1vw 1vw 1vw #755341;
 } 
 .Me5{
-    top:260vh;
+    top:282vh;
     left:50vw;
     color:#844b2e;
     width:30vw;
