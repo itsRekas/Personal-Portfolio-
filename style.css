@@ -1,5 +1,8 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Spicy+Rice&display=swap');
+
+/* Keyframes for sliding animations */
 @keyframes slideright {
     from{
         transform: translateX(50vw);

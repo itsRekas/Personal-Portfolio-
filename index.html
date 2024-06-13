@@ -1,116 +1,247 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>MeetRekas</title>
-        <!--Meta-->
+        <!-- Meta tags for SEO and character set -->
         <meta charset="UTF-8">
         <meta name="author" content="Reginald Kotey Appiah-Sekyere">
         <meta name="description" content="Meet Rekas. Get to know more about Rekas. View projects and Certifications">
         <meta name="keywords" content="Rekas,Reginald,Kotey,Appiah-Sekyere,Meet.Rekas">
-        <!--Viewports-->
-        <meta name="--Viewports--" content="width=device-width , initial-scale=1">
-         <!--Favicon-->
-         <link rel="icon" href="media/favicon.png"><!--<a href="https://www.flaticon.com/free-icons/person" title="person icons">Person icons created by Freepik - Flaticon</a>-->
-        <!--Css-->
+        <!-- Viewport settings for responsive design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon link for the website icon -->
+        <link rel="icon" href="media/favicon.png">
+        <!-- CSS stylesheet link -->
         <link rel="stylesheet" href="style.css">  
-        <!--Script-->
-        <script defer src="script.js"> </script> 
+        <!-- JavaScript file link with defer attribute to load it after the HTML -->
+        <script defer src="script.js"></script> 
     </head>
-    <Body>
+    <body>
+        <!-- Main homepage section -->
+        <!-- Main section for the HomePage -->
         <section id="HomePage">
+            
+            <!-- Mobile navigation container -->
             <div class="mobilenav">
+                
+                <!-- Navigation links -->
                 <div class="mnav">
-                    <a onclick="showpage()" href="#" class="Aboutm"><strong>About</strong></a>
-                    <a onclick="showpage()" href="#Projectspage" class="Projectsm"><strong>Projects</strong></a>
-                    <a onclick="showpage()" href="#SkillsPage" class="Skillsm"><strong>Skills</strong></a>
-                    <a onclick="showpage()" href="#ExperiencePage" class="Experiencem"><strong>Experience</strong></a>
+                    <!-- Link to the About page; triggers showpage() function when clicked -->
+                    <a onclick="mobileshowpage()" href="#" class="Aboutm"><strong>About</strong></a>
+                    <!-- Link to the Projects page; triggers showpage() function when clicked -->
+                    <a onclick="mobileshowpage()" href="#Projectspage" class="Projectsm"><strong>Projects</strong></a>
+                    <!-- Link to the Skills page; triggers showpage() function when clicked -->
+                    <a onclick="mobileshowpage()" href="#SkillsPage" class="Skillsm"><strong>Skills</strong></a>
+                    <!-- Link to the Experience page; triggers showpage() function when clicked -->
+                    <a onclick="mobileshowpage()" href="#ExperiencePage" class="Experiencem"><strong>Experience</strong></a>
                 </div>
+                
+                <!-- Social media icons container -->
                 <div class="socialmicons">
+                    <!-- Facebook link opening in a new tab -->
                     <a href="https://www.facebook.com/its.rekas" target="_blank"><img src="./media/facebook.png"></a>
+                    <!-- Instagram link opening in a new tab -->
                     <a href="https://www.instagram.com/_r.e.k.a.s_" target="_blank"><img src="./media/instagram.png"></a>
+                    <!-- Snapchat link opening in a new tab -->
                     <a href="https://t.snapchat.com/vt6f35ss" target="_blank"><img src="./media/snapchat.png"></a>
+                    <!-- Telegram link opening in a new tab -->
                     <a href="https://t.me/its_rekas" target="_blank"><img src="./media/telegram.png"></a>
+                    <!-- LinkedIn link opening in a new tab -->
                     <a href="https://www.linkedin.com/in/itsrekas" target="_blank"><img src="./media/linkedIn.png"></a>
-                    <a onclick="showpage()" href="#ContactPage"><img src="./media/gmail.png"></a>
+                    <!-- Link to the Contact page; triggers showpage() function when clicked -->
+                    <a onclick="mobileshowpage()" href="#ContactPage"><img src="./media/gmail.png"></a>
                 </div>
             </div>
+            <!-- Overlay background element -->
             <div class="Overlay"></div>
-                <div class="Pagemark">
-                    <h1>Rekas</h1>
+
+            <!-- Pagemark with main heading -->
+            <div class="Pagemark">
+                <h1>Rekas</h1>
+            </div>
+
+            <!-- Navigation bar -->
+            <nav>
+                <!-- Container for navigation buttons -->
+                <div class="navButtons">
+                    <!-- Link to the About page; triggers showpage() function when clicked -->
+                    <a onclick="showpage()" href="#" class="About"><strong>About</strong></a>
+                    <!-- Link to the Projects page; triggers showpage() function when clicked -->
+                    <a onclick="showpage()" href="#Projectspage" class="Projects"><strong>Projects</strong></a>
+                    <!-- Link to the Skills page; triggers showpage() function when clicked -->
+                    <a onclick="showpage()" href="#SkillsPage" class="Skills"><strong>Skills</strong></a>
+                    <!-- Link to the Experience page; triggers showpage() function when clicked -->
+                    <a onclick="showpage()" href="#ExperiencePage" class="Experience"><strong>Experience</strong></a>
                 </div>
-                <nav>
-                    <div class="navButtons">
-                        <a onclick="showpage()" href="#" class="About"><strong>About</strong></a>
-                        <a onclick="showpage()" href="#Projectspage" class="Projects"><strong>Projects</strong></a>
-                        <a onclick="showpage()" href="#SkillsPage" class="Skills"><strong>Skills</strong></a>
-                        <a onclick="showpage()" href="#ExperiencePage" class="Experience"><strong>Experience</strong></a>
-                    </div>
-                    <div class="Menu" >
-                        <a onclick=showMenu() href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="100px" height="100px"><g fill="none" fill-rule="nonzero" stroke="#ffe4d6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M36.1,7.5h2.4c1.1,0 2,0.9 2,2v3c0,1.1 -0.9,2 -2,2h-20.5"></path><path d="M13,14.5h-3.5c-1.1,0 -2,-0.9 -2,-2v-3c0,-1.1 0.9,-2 2,-2h21.3"></path><path d="M13.3,27.5h-3.8c-1.1,0 -2,-0.9 -2,-2v-3c0,-1.1 0.9,-2 2,-2h20"></path><path d="M35,20.5h3.5c1.1,0 2,0.9 2,2v3c0,1.1 -0.9,2 -2,2h-20"></path><path d="M13.5,40.5h-4c-1.1,0 -2,-0.9 -2,-2v-3c0,-1.1 0.9,-2 2,-2h19.6"></path><path d="M34.2,33.5h4.3c1.1,0 2,0.9 2,2v3c0,1.1 -0.9,2 -2,2h-20"></path></g></g></svg></a>
-                    </div>
-                    <div class="Close">
-                        <a onclick=closeMenu() href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="48px" height="48px"><g fill="none" fill-rule="nonzero" stroke="#ffe4d6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M11.7,28.5l-3.7,3.7c-0.8,0.8 -0.8,2 0,2.8l5,5c0.8,0.8 2,0.8 2.8,0l8.2,-8.2l8.2,8.2c0.8,0.8 2,0.8 2.8,0l5,-5c0.8,-0.8 0.8,-2 0,-2.8l-8.2,-8.2l8.2,-8.2c0.8,-0.8 0.8,-2 0,-2.8l-2.6,-2.6"></path><path d="M33.1,7.1l-9.1,9.1l-8.2,-8.2c-0.8,-0.8 -2,-0.8 -2.8,0l-5,5c-0.8,0.8 -0.8,2 0,2.8l8.2,8.2"></path></g></g></svg></a>
-                    </div>
-                </nav>
+                
+                <!-- Menu button to open the navigation menu -->
+                <div class="Menu">
+                    <a onclick="showMenu()" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="100px" height="100px">
+                            <g fill="none" fill-rule="nonzero" stroke="#ffe4d6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                <g transform="scale(5.33333,5.33333)">
+                                    <path d="M36.1,7.5h2.4c1.1,0 2,0.9 2,2v3c0,1.1 -0.9,2 -2,2h-20.5"></path>
+                                    <path d="M13,14.5h-3.5c-1.1,0 -2,-0.9 -2,-2v-3c0,-1.1 0.9,-2 2,-2h21.3"></path>
+                                    <path d="M13.3,27.5h-3.8c-1.1,0 -2,-0.9 -2,-2v-3c0,-1.1 0.9,-2 2,-2h20"></path>
+                                    <path d="M35,20.5h3.5c1.1,0 2,0.9 2,2v3c0,1.1 -0.9,2 -2,2h-20"></path>
+                                    <path d="M13.5,40.5h-4c-1.1,0 -2,-0.9 -2,-2v-3c0,-1.1 0.9,-2 2,-2h19.6"></path>
+                                    <path d="M34.2,33.5h4.3c1.1,0 2,0.9 2,2v3c0,1.1 -0.9,2 -2,2h-20"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- Close button to close the navigation menu -->
+                <div class="Close">
+                    <a onclick="closeMenu()" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="48px" height="48px">
+                            <g fill="none" fill-rule="nonzero" stroke="#ffe4d6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                <g transform="scale(5.33333,5.33333)">
+                                    <path d="M11.7,28.5l-3.7,3.7c-0.8,0.8 -0.8,2 0,2.8l5,5c0.8,0.8 2,0.8 2.8,0l8.2,-8.2l8.2,8.2c0.8,0.8 2,0.8 2.8,0l5,-5c0.8,-0.8 0.8,-2 0,-2.8l-8.2,-8.2l8.2,-8.2c0.8,-0.8 0.8,-2 0,-2.8l-2.6,-2.6"></path>
+                                    <path d="M33.1,7.1l-9.1,9.1l-8.2,-8.2c-0.8,-0.8 -2,-0.8 -2.8,0l-5,5c-0.8,0.8 -0.8,2 0,2.8l8.2,8.2"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Main content section with user information -->
             <main class="Myinfo">
-                <div class="welcontainer"><h1 class="welcome">Welcome!</h1></div>
+                <!-- Welcome container with welcome message -->
+                <div class="welcontainer">
+                    <h1 class="welcome">Welcome!</h1>
+                </div>
+                
+                <!-- Decorative block element -->
                 <div class="block"></div>
-                    <div class="me">
-                        <p>My Name is:<br><strong>Reginald Kotey Appiah-Sekyere</strong> </p>
-                    </div>
-                    <div class="you"></div>
+                
+                <!-- Container with personal information -->
+                <div class="me">
+                    <p>My Name is:<br><strong>Reginald Kotey Appiah-Sekyere</strong> </p>
+                </div>
+                
+                <!-- Decorative block element -->
+                <div class="you"></div>
             </main>
+
+            <!-- Portrait image container -->
             <div class="Potrait">
                 <img src="./media/SelfPotrait.jpg">
             </div>
+
+            <!-- Footer section with social media links -->
             <footer class="footbar">
+                <!-- Social media links -->
                 <div class="sMedia">
+                    <!-- Facebook link opening in a new tab -->
                     <a href="https://www.facebook.com/its.rekas" target="_blank"><img src="./media/facebook.png"></a>
+                    <!-- Instagram link opening in a new tab -->
                     <a href="https://www.instagram.com/_r.e.k.a.s_" target="_blank"><img src="./media/instagram.png"></a>
+                    <!-- Snapchat link opening in a new tab -->
                     <a href="https://t.snapchat.com/vt6f35ss" target="_blank"><img src="./media/snapchat.png"></a>
+                    <!-- Telegram link opening in a new tab -->
                     <a href="https://t.me/its_rekas" target="_blank"><img src="./media/telegram.png"></a>
                 </div>
+                
+                <!-- Formal communication links -->
                 <div class="formalM">
+                    <!-- LinkedIn link opening in a new tab -->
                     <a href="https://www.linkedin.com/in/itsrekas" target="_blank"><img src="./media/linkedIn.png"></a>
+                    <!-- Link to the Contact page; triggers showpage() function when clicked -->
                     <a onclick="showpage()" href="#ContactPage"><img src="./media/gmail.png"></a>
                 </div>
             </footer>
         </section>
         <section id="AboutPage">
-            <div class="Menu2" >
-                <a onclick=showMenu2() href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="100px" height="100px"><g fill="none" fill-rule="nonzero" stroke="#ffe4d6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M36.1,7.5h2.4c1.1,0 2,0.9 2,2v3c0,1.1 -0.9,2 -2,2h-20.5"></path><path d="M13,14.5h-3.5c-1.1,0 -2,-0.9 -2,-2v-3c0,-1.1 0.9,-2 2,-2h21.3"></path><path d="M13.3,27.5h-3.8c-1.1,0 -2,-0.9 -2,-2v-3c0,-1.1 0.9,-2 2,-2h20"></path><path d="M35,20.5h3.5c1.1,0 2,0.9 2,2v3c0,1.1 -0.9,2 -2,2h-20"></path><path d="M13.5,40.5h-4c-1.1,0 -2,-0.9 -2,-2v-3c0,-1.1 0.9,-2 2,-2h19.6"></path><path d="M34.2,33.5h4.3c1.1,0 2,0.9 2,2v3c0,1.1 -0.9,2 -2,2h-20"></path></g></g></svg></a>
+            <!-- Menu button to open the secondary navigation menu -->
+            <div class="Menu2">
+                <a onclick="showMenu2()" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="100px" height="100px">
+                        <g fill="none" fill-rule="nonzero" stroke="#ffe4d6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                            <g transform="scale(5.33333,5.33333)">
+                                <path d="M36.1,7.5h2.4c1.1,0 2,0.9 2,2v3c0,1.1 -0.9,2 -2,2h-20.5"></path>
+                                <path d="M13,14.5h-3.5c-1.1,0 -2,-0.9 -2,-2v-3c0,-1.1 0.9,-2 2,-2h21.3"></path>
+                                <path d="M13.3,27.5h-3.8c-1.1,0 -2,-0.9 -2,-2v-3c0,-1.1 0.9,-2 2,-2h20"></path>
+                                <path d="M35,20.5h3.5c1.1,0 2,0.9 2,2v3c0,1.1 -0.9,2 -2,2h-20"></path>
+                                <path d="M13.5,40.5h-4c-1.1,0 -2,-0.9 -2,-2v-3c0,-1.1 0.9,-2 2,-2h19.6"></path>
+                                <path d="M34.2,33.5h4.3c1.1,0 2,0.9 2,2v3c0,1.1 -0.9,2 -2,2h-20"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
             </div>
+
+            <!-- Close button to close the secondary navigation menu -->
             <div class="Close2">
-                <a onclick=closeMenu2() href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="48px" height="48px"><g fill="none" fill-rule="nonzero" stroke="#ffe4d6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M11.7,28.5l-3.7,3.7c-0.8,0.8 -0.8,2 0,2.8l5,5c0.8,0.8 2,0.8 2.8,0l8.2,-8.2l8.2,8.2c0.8,0.8 2,0.8 2.8,0l5,-5c0.8,-0.8 0.8,-2 0,-2.8l-8.2,-8.2l8.2,-8.2c0.8,-0.8 0.8,-2 0,-2.8l-2.6,-2.6"></path><path d="M33.1,7.1l-9.1,9.1l-8.2,-8.2c-0.8,-0.8 -2,-0.8 -2.8,0l-5,5c-0.8,0.8 -0.8,2 0,2.8l8.2,8.2"></path></g></g></svg></a>
+                <a onclick="closeMenu2()" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="48px" height="48px">
+                        <g fill="none" fill-rule="nonzero" stroke="#ffe4d6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                            <g transform="scale(5.33333,5.33333)">
+                                <path d="M11.7,28.5l-3.7,3.7c-0.8,0.8 -0.8,2 0,2.8l5,5c0.8,0.8 2,0.8 2.8,0l8.2,-8.2l8.2,8.2c0.8,0.8 2,0.8 2.8,0l5,-5c0.8,-0.8 0.8,-2 0,-2.8l-8.2,-8.2l8.2,-8.2c0.8,-0.8 0.8,-2 0,-2.8l-2.6,-2.6"></path>
+                                <path d="M33.1,7.1l-9.1,9.1l-8.2,-8.2c-0.8,-0.8 -2,-0.8 -2.8,0l-5,5c-0.8,0.8 -0.8,2 0,2.8l8.2,8.2"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
             </div>
+
+            <!-- Mobile navigation container -->
             <div class="mobilenav2">
+                <!-- Navigation links -->
                 <div class="mnav2">
-                    <a onclick="hidepage()" href="#"><strong>Home</strong></a>
+                    <!-- Link to the Home page; triggers hidepage() function when clicked -->
+                    <a onclick="mobilehidepage()" href="#"><strong>Home</strong></a>
+                    <!-- Link to the About page; triggers closeMenu2() function when clicked -->
                     <a onclick="closeMenu2()" href="#"><strong>About</strong></a>
+                    <!-- Link to the Projects page; triggers closeMenu2() function when clicked -->
                     <a onclick="closeMenu2()" href="#Projectspage"><strong>Projects</strong></a>
+                    <!-- Link to the Skills page; triggers closeMenu2() function when clicked -->
                     <a onclick="closeMenu2()" href="#SkillsPage"><strong>Skills</strong></a>
+                    <!-- Link to the Experience page; triggers closeMenu2() function when clicked -->
                     <a onclick="closeMenu2()" href="#ExperiencePage"><strong>Experience</strong></a>
                 </div>
+
+                <!-- Social media icons container -->
                 <div class="socialmicons">
+                    <!-- Facebook link opening in a new tab -->
                     <a href="https://www.facebook.com/its.rekas" target="_blank"><img src="./media/facebook.png"></a>
+                    <!-- Instagram link opening in a new tab -->
                     <a href="https://www.instagram.com/_r.e.k.a.s_" target="_blank"><img src="./media/instagram.png"></a>
+                    <!-- Snapchat link opening in a new tab -->
                     <a href="https://t.snapchat.com/vt6f35ss" target="_blank"><img src="./media/snapchat.png"></a>
+                    <!-- Telegram link opening in a new tab -->
                     <a href="https://t.me/its_rekas" target="_blank"><img src="./media/telegram.png"></a>
+                    <!-- LinkedIn link opening in a new tab -->
                     <a href="https://www.linkedin.com/in/itsrekas" target="_blank"><img src="./media/linkedIn.png"></a>
+                    <!-- Link to the Contact page; triggers closeMenu() function when clicked -->
                     <a onclick="closeMenu()" href="#ContactPage"><img src="./media/gmail.png"></a>
                 </div>
             </div>
+
+            <!-- Navigation bar -->
             <div class="Navigationbar">
-                <div class="rekas"><a onclick="hidepage()" href="#" class="kw333">Rekas</a></div>
+                <!-- Logo link to the home page -->
+                <div class="rekas">
+                    <a onclick="hidepage()" href="#" class="kw333">Rekas</a>
+                </div>
+
+                <!-- Container for navigation buttons -->
                 <div class="navButtons">
+                    <!-- Link to the Home page; triggers hidepage() function when clicked -->
                     <a onclick="hidepage()" href="#" class="Home"><strong>Home</strong></a>
+                    <!-- Link to the About page -->
                     <a href="#" class="About"><strong>About</strong></a>
+                    <!-- Link to the Projects page -->
                     <a href="#Projectspage" class="Projects"><strong>Projects</strong></a>
+                    <!-- Link to the Skills page -->
                     <a href="#SkillsPage" class="Skills"><strong>Skills</strong></a>
+                    <!-- Link to the Experience page -->
                     <a href="#ExperiencePage" class="Experience"><strong>Experience</strong></a>
                 </div>
-                
             </div>
+            <!--About section -->
             <div id="aboutsection" class="mySection">
                 <h1 class="Hello">
                     Hello!
@@ -148,11 +279,11 @@
                     <img src="./media/hobby.PNG">
                </div>
             </div>
+            <!-- Projects section -->
             <div id="Projectspage" class="mySection">
-                <h2>
-                    PROJECTS
-                </h2>
+                <h2>PROJECTS</h2>
                 <div class="P">
+                    <!-- Portfolio Website Project -->
                     <a href="#" class="P1">
                         <img src="./media/SelfPotrait.jpg" class="image">
                         <div class="Pinfo">
@@ -162,11 +293,11 @@
                                 <li>JavaScript</li>
                                 <li>CSS</li>
                             </ul>
-                            <p>
-                                
-                            </p>
+                            <p>This portfolio is designed to be minimalistic yet artistic, incorporating subtle animations to create a visually engaging experience. The layout is clean and straightforward, making it easy for clients to understand who I am and what I offer.</p>
                         </div>
                     </a>
+
+                    <!-- Behind the Scenes Project -->
                     <a href="https://itsrekas.github.io/Assignment-3/" target="_blank" class="P2">
                         <img src="./media/behindtheScenes.jpeg">
                         <div class="Pinfo">
@@ -181,6 +312,8 @@
                             </p>
                         </div>
                     </a>
+
+                    <!-- Robbery Project -->
                     <a href="https://buernortey67.github.io/SOUNDPROJECT/index.html" target="_blank" class="P3">
                         <img src="./media/robbery.jpeg">
                         <div class="Pinfo">
@@ -191,11 +324,13 @@
                                 <li>CSS</li>
                             </ul>
                             <p>
-                                The News Channel is an innovative project designed to deliver the top breaking news of the week at New York University Abu Dhabi. This platform functions similarly to a podcast, utilising audio-only formats to keep users informed about recent events. 
+                                The News Channel is an innovative project designed to deliver the top breaking news of the week at New York University Abu Dhabi. This platform functions similarly to a podcast, utilising audio-only formats to keep users informed about recent events.
                             </p>
                         </div>
                     </a>
-                    <a href=" https://itsrekas.github.io/Assignment-1/" target="_blank" class="P4">
+
+                    <!-- Clip Story Project -->
+                    <a href="https://itsrekas.github.io/Assignment-1/" target="_blank" class="P4">
                         <img src="./media/struggle.jpg" class="image">
                         <div class="Pinfo">
                             <h3>Clip Story</h3>
@@ -209,6 +344,8 @@
                             </p>
                         </div>
                     </a>
+
+                    <!-- Shazzy Comic Project -->
                     <a href="https://itsrekas.github.io/Assignment-2/" target="_blank" class="P5">
                         <img src="./media/Bookcover.jpg" class="image">
                         <div class="Pinfo">
@@ -223,6 +360,8 @@
                             </p>
                         </div>
                     </a>
+
+                    <!-- Rekas Bot Project -->
                     <a href="#" target="_blank" class="P6">
                         <img src="./media/rekasbot1.jpg" class="image">
                         <div class="Pinfo">
@@ -234,81 +373,89 @@
                                 <li>P5.ml</li>
                             </ul>
                             <p>
-                                The idea was to create a bot that can be controlled with hand movement using machine learning with the P5.ml library.
-                                The P5 sketch has an in-car design with the steering wheel and the Arduino comprises 4dc motors,
-                                two ultrasonic sensors, and some LEDs. 
+                                The idea was to create a bot that can be controlled with hand movement using machine learning with the P5.ml library. The P5 sketch has an in-car design with the steering wheel and the Arduino comprises 4 DC motors, two ultrasonic sensors, and some LEDs.
                             </p>
                         </div>
                     </a>
                 </div>
             </div>
+            <!-- Skills section -->
             <div id="SkillsPage" class="mySection">
-                <h2>
-                    Skills
-                </h2>
+                <h2>Skills</h2>
                 <div class="skills">
+                    <!-- Skill 1: C++ -->
                     <div class="skill">
-                        <div class="skill-name"><img src="./media/c-.png"></div>
+                        <div class="skill-name"><img src="./media/c-.png" alt="C++"></div>
                         <div class="skill-bar">
                             <div class="skill-per" per="90%" style="max-width: 90%;"></div>
                         </div>
                     </div>
+                    <!-- Skill 2: C -->
                     <div class="skill">
-                        <div class="skill-name"><img src="./media/c.png"></div>
+                        <div class="skill-name"><img src="./media/c.png" alt="C"></div>
                         <div class="skill-bar">
                             <div class="skill-per" per="85%" style="max-width: 85%;"></div>
                         </div>
                     </div>
+                    <!-- Skill 3: HTML -->
                     <div class="skill">
-                        <div class="skill-name"><img src="./media/html.png"></div>
+                        <div class="skill-name"><img src="./media/html.png" alt="HTML"></div>
                         <div class="skill-bar">
                             <div class="skill-per" per="82%" style="max-width: 82%;"></div>
                         </div>
                     </div>
+                    <!-- Skill 4: CSS -->
                     <div class="skill">
-                        <div class="skill-name"><img src="./media/c.png"></div>
+                        <div class="skill-name"><img src="./media/css.png" alt="CSS"></div>
                         <div class="skill-bar">
                             <div class="skill-per" per="80%" style="max-width: 80%;"></div>
                         </div>
                     </div>
+                    <!-- Skill 5: Python -->
                     <div class="skill">
-                        <div class="skill-name"><img src="./media/python.png"></div>
+                        <div class="skill-name"><img src="./media/python.png" alt="Python"></div>
                         <div class="skill-bar">
                             <div class="skill-per" per="78%" style="max-width: 78%;"></div>
                         </div>
                     </div>
+                    <!-- Skill 6: JavaScript -->
                     <div class="skill">
-                        <div class="skill-name"><img src="./media/js.png"></div>
+                        <div class="skill-name"><img src="./media/js.png" alt="JavaScript"></div>
                         <div class="skill-bar">
                             <div class="skill-per" per="76%" style="max-width: 76%;"></div>
                         </div>
                     </div>
+                    <!-- Skill 7: Photoshop -->
                     <div class="skill">
-                        <div class="skill-name"><img src="./media/photoshop.png"></div>
+                        <div class="skill-name"><img src="./media/photoshop.png" alt="Photoshop"></div>
                         <div class="skill-bar">
                             <div class="skill-per" per="75%" style="max-width: 75%;"></div>
                         </div>
                     </div>
+                    <!-- Skill 8: Premiere Pro -->
                     <div class="skill">
-                        <div class="skill-name"><img src="./media/premierepro.png"></div>
+                        <div class="skill-name"><img src="./media/premierepro.png" alt="Premiere Pro"></div>
                         <div class="skill-bar">
                             <div class="skill-per" per="74%" style="max-width: 74%;"></div>
                         </div>
                     </div>
+                    <!-- Skill 9: Lightroom -->
                     <div class="skill">
-                        <div class="skill-name"><img src="./media/lightroom.png"></div>
+                        <div class="skill-name"><img src="./media/lightroom.png" alt="Lightroom"></div>
                         <div class="skill-bar">
                             <div class="skill-per" per="73%" style="max-width: 73%;"></div>
                         </div>
                     </div>
+                    <!-- Skill 10: Adobe XD -->
                     <div class="skill">
-                        <div class="skill-name"><img src="./media/xd.png"></div>
+                        <div class="skill-name"><img src="./media/xd.png" alt="Adobe XD"></div>
                         <div class="skill-bar">
                             <div class="skill-per" per="72%" style="max-width: 72%;"></div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--Experience Section-->
             <div id="ExperiencePage" class="mySection">
                 <h2>
                     Resume
