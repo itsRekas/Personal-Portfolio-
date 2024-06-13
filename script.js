@@ -1,5 +1,6 @@
 var homeon=true;
 function showpage(){
+    closeMenu();
     const infoSection=document.getElementById("AboutPage");
     const HomeSection=document.getElementById("HomePage");
     HomeSection.style.display="none";
@@ -7,6 +8,7 @@ function showpage(){
     homeon=false;
 }
 function hidepage(){
+    closeMenu2();
     const infoSection=document.getElementById("AboutPage");
     const HomeSection=document.getElementById("HomePage");
     HomeSection.style.display="block";
@@ -44,18 +46,34 @@ function typingeffect(){
     setInterval(startAnimationCycle, 25000);
 }
 function showMenu(){
-    const navbuttons = document.querySelector(".navButtons");
+    const nav = document.querySelector(".mobilenav");
     const menubutton=document.querySelector('.Menu');
     const close = document.querySelector('.Close')
-    navbuttons.style.display = 'block';
+    nav.style.display = 'block';
     menubutton.style.display = 'none';
     close.style.display = "block";
 }
 function closeMenu(){
-    const navbuttons = document.querySelector(".navButtons");
+    const nav = document.querySelector(".mobilenav");
     const menubutton=document.querySelector('.Menu');
     const close = document.querySelector('.Close')
-    navbuttons.style.display = 'none';
+    nav.style.display = 'none';
+    menubutton.style.display = 'block';
+    close.style.display = "none";
+}
+function showMenu2(){
+    const nav = document.querySelector(".mobilenav2");
+    const menubutton=document.querySelector('.Menu2');
+    const close = document.querySelector('.Close2')
+    nav.style.display = 'block';
+    menubutton.style.display = 'none';
+    close.style.display = "block";
+}
+function closeMenu2(){
+    const nav = document.querySelector(".mobilenav2");
+    const menubutton=document.querySelector('.Menu2');
+    const close = document.querySelector('.Close2')
+    nav.style.display = 'none';
     menubutton.style.display = 'block';
     close.style.display = "none";
 }
@@ -110,34 +128,17 @@ const fillbar = new IntersectionObserver((entries)=>{
         }
     });
 });
-// const pullam = new IntersectionObserver((entries)=>{
-//     entries.forEach((entry)=>{
-//         if(entry.isIntersecting){
-//             showdownload();
-//         }
-//         else{
-//            hidedownload();
-//         }
-//     });
-// });
+
 const hiddenme2 = document.querySelectorAll('.Me2');
-hiddenme2.forEach((el)=>observerleft.observe(el));
+hiddenme2.forEach((el)=>observerright.observe(el));
 const hiddenme3 = document.querySelectorAll('.Me3');
 hiddenme3.forEach((el)=>observerright.observe(el));
 const hiddenme4 = document.querySelectorAll('.Me4');
-hiddenme4.forEach((el)=>observerleft.observe(el));
+hiddenme4.forEach((el)=>observerright.observe(el));
 const hiddenme5 = document.querySelectorAll('.Me5');
 hiddenme5.forEach((el)=>observerright.observe(el));
 const progressfill = document.querySelectorAll('.skill-per');
 progressfill.forEach((el)=>fillbar.observe(el));
-// const pullResume = document.querySelectorAll('.timeline-container');
-// pullResume.forEach((el)=>pullam.observe(el));
-
-// function showdownload(){
-//     const pull = document.querySelector('download');
-//     pull.style.opacity="1";
-// } 
-// Define the functions to show and hide the download element
 function showdownload() {
     const downloadElement = document.getElementById('download'); // Assuming 'download' is the id of the element to show
     if (downloadElement) {
