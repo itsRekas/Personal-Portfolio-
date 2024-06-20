@@ -236,7 +236,7 @@ main{
 }
 .welcontainer{
     position:relative;
-    overflow-x:hidden;
+    overflow:hidden;
     left:13vw;
     top:19vh;
     width:40vw;
