@@ -236,7 +236,7 @@ main{
 }
 .welcontainer{
     position:relative;
-    overflow-x:hidden;
+    overflow:hidden;
     left:13vw;
     top:19vh;
     width:40vw;
@@ -377,6 +377,7 @@ footer{
     top:3vh;
     font-size:calc(1vw + 1vh);
     left:3vw;
+    background-color: rgba(0, 0, 0, 0);
 }
 .Navigationbar{
     position:fixed;
@@ -630,7 +631,6 @@ margin-bottom: 1vh;
     height:5vw;
 }
 .skill-bar{
-    
     height:3.5vh;
     background:#17171b;
     border-radius: 3vw;
@@ -1093,7 +1093,7 @@ margin-bottom: 1vh;
         display:none; 
     }
     #aboutsection{
-        height:385vh;
+        height:480vh;
     }
     .rekas{
         font-size:calc((1.7vw + 1.7vh));
@@ -1110,7 +1110,7 @@ margin-bottom: 1vh;
         text-align: center;
     }
     .Me2{
-        top:90vh;
+        top:108vh;
         left:10%;
         width:80%;
         font-size:calc(1.5*(1vw + 1vh));
@@ -1120,10 +1120,10 @@ margin-bottom: 1vh;
         width:80vw;
         height:80vw;
         left:0;
-        top:-40vh;
+        top:-55vh;
     } 
     .Me3{
-        top:156vh;
+        top:197vh;
         left:10%;
         width:80%;
         font-size:calc(1.5*(1vw + 1vh));
@@ -1133,10 +1133,10 @@ margin-bottom: 1vh;
         width:80vw;
         height:80vw;
         left:0;
-        top:-40vh;
+        top:-55vh;
     } 
     .Me4{
-        top:240vh;
+        top:299vh;
         left:10%;
         width:80%;
         font-size:calc(1.5*(1vw + 1vh));
@@ -1146,10 +1146,10 @@ margin-bottom: 1vh;
         width:80vw;
         height:80vw;
         left:0;
-        top:-40vh;
+        top:-55vh;
     } 
     .Me5{
-        top:330vh;
+        top:418vh;
         left:10%;
         width:80%;
         font-size:calc(1.5*(1vw + 1vh));
@@ -1159,10 +1159,10 @@ margin-bottom: 1vh;
         width:80vw;
         height:80vw;
         left:0;
-        top:-40vh;
+        top:-55vh;
     } 
     #Projectspage{
-        min-height:285vh;
+        min-height:390vh;
     }
     #Projectspage h2{
         font-size:calc(1.2*(1vw + 1vh));
@@ -1175,6 +1175,10 @@ margin-bottom: 1vh;
     .P img{
         width:80vw;
         height:80vw;
+    }
+    .Pinfo p{
+        font-size: calc(1.8*(1vw + 1vh));
+        text-align: center;
     }
     #SkillsPage{
         min-height:100vh;
@@ -1222,7 +1226,7 @@ margin-bottom: 1vh;
         top:-0.7vh;
     }
     #ExperiencePage{
-        min-height:170vh;
+        min-height:230vh;
     }
     #ExperiencePage h2{
         font-size:calc(1.5*(1vw + 1vh));
@@ -1380,7 +1384,7 @@ margin-bottom: 1vh;
         display:grid;
         grid-template-columns: auto auto;
         top:60%;
-        padding:0vh 7vh;
+        padding:0vh 15vh;
         column-gap: 15vh;
         row-gap: 3vh;
     }
