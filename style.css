@@ -1093,7 +1093,7 @@ margin-bottom: 1vh;
         display:none; 
     }
     #aboutsection{
-        height:3300px;
+        height:3800px;
     }
     .rekas{
         font-size:calc((1.7vw + 1.7vh));
@@ -1110,7 +1110,7 @@ margin-bottom: 1vh;
         text-align: center;
     }
     .Me2{
-        top:111vh;
+        top:114vh;
         left:10%;
         width:80%;
         font-size:calc(1.5*(1vw + 1vh));
@@ -1123,7 +1123,7 @@ margin-bottom: 1vh;
         top:-85vw;
     } 
     .Me3{
-        top:202vh;
+        top:208vh;
         left:10%;
         width:80%;
         font-size:calc(1.5*(1vw + 1vh));
@@ -1136,7 +1136,7 @@ margin-bottom: 1vh;
         top:-85vw;
     } 
     .Me4{
-        top:303vh;
+        top:318vh;
         left:10%;
         width:80%;
         font-size:calc(1.5*(1vw + 1vh));
@@ -1149,7 +1149,7 @@ margin-bottom: 1vh;
         top:-85vw;
     } 
     .Me5{
-        top:416vh;
+        top:445vh;
         left:10%;
         width:80%;
         font-size:calc(1.5*(1vw + 1vh));
@@ -1162,7 +1162,7 @@ margin-bottom: 1vh;
         top:-85vw;
     } 
     #Projectspage{
-        min-height:620vw;
+        min-height:2900px;
     }
     #Projectspage h2{
         font-size:calc(1.2*(1vw + 1vh));
@@ -1171,6 +1171,7 @@ margin-bottom: 1vh;
     }
     .P{
         grid-template-columns: auto;
+        background-color: rgba(0, 0, 0, 0);
     }
     .P img{
         width:80vw;
