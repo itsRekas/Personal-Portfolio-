@@ -47,8 +47,8 @@ function typingeffect() {
     const info = [
         "But, hey! You can just call me Rekas",
         "Welcome to my website",
-        "You can nevermind",
-        "You can contact from any icon below",
+        "Get to know me from my about Page",
+        "You can contact from any Contact icon",
     ];
 
     // Function to type text character by character

@@ -1081,10 +1081,11 @@ margin-bottom: 1vh;
     }
     .you{
         left:20vw;
-        top:75vh;
+        margin-top:-3vh;
         font-size: calc(3*(1vw + 1vh));
         width:60vw;
-        height:20vh; 
+        height:25vh;
+        z-index: 4; 
     }
     .sMedia{
         display:none;
@@ -1093,7 +1094,7 @@ margin-bottom: 1vh;
         display:none; 
     }
     #aboutsection{
-        height:calc(300vh + 340vw);
+        height:calc(310vh + 340vw);
     }
     .rekas{
         font-size:calc((1.7vw + 1.7vh));
@@ -1150,7 +1151,7 @@ margin-bottom: 1vh;
         top:-85vw;
     } 
     .Me5{
-        top:calc(272vh + 255vw);
+        top:calc(279vh + 255vw);
         left:10%;
         width:80%;
         font-size:calc(1.5*(1vw + 1vh));
@@ -1388,7 +1389,7 @@ margin-bottom: 1vh;
         display:grid;
         grid-template-columns: auto auto;
         top:60%;
-        padding:0vh 15vh;
+        justify-content: center;
         column-gap: 15vh;
         row-gap: 3vh;
     }
