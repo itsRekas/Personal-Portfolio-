@@ -1093,7 +1093,7 @@ margin-bottom: 1vh;
         display:none; 
     }
     #aboutsection{
-        height:3800px;
+        height:calc(300vh + 340vw);
     }
     .rekas{
         font-size:calc((1.7vw + 1.7vh));
@@ -1112,6 +1112,7 @@ margin-bottom: 1vh;
     .Me2{
         top:114vh;
         left:10%;
+        height:40vh;
         width:80%;
         font-size:calc(1.5*(1vw + 1vh));
         text-align: center;
@@ -1123,7 +1124,7 @@ margin-bottom: 1vh;
         top:-85vw;
     } 
     .Me3{
-        top:208vh;
+        top:calc(152vh + 85vw);
         left:10%;
         width:80%;
         font-size:calc(1.5*(1vw + 1vh));
@@ -1136,7 +1137,7 @@ margin-bottom: 1vh;
         top:-85vw;
     } 
     .Me4{
-        top:318vh;
+        top:calc(208vh + 170vw);
         left:10%;
         width:80%;
         font-size:calc(1.5*(1vw + 1vh));
@@ -1149,7 +1150,7 @@ margin-bottom: 1vh;
         top:-85vw;
     } 
     .Me5{
-        top:445vh;
+        top:calc(272vh + 255vw);
         left:10%;
         width:80%;
         font-size:calc(1.5*(1vw + 1vh));
@@ -1162,7 +1163,7 @@ margin-bottom: 1vh;
         top:-85vw;
     } 
     #Projectspage{
-        min-height:2900px;
+        min-height:calc(30vh + 500vw);
     }
     #Projectspage h2{
         font-size:calc(1.2*(1vw + 1vh));
@@ -1170,8 +1171,10 @@ margin-bottom: 1vh;
         width:100%;
     }
     .P{
+        top:0;
         grid-template-columns: auto;
         background-color: rgba(0, 0, 0, 0);
+        row-gap: 5vh;
     }
     .P img{
         width:80vw;
@@ -1227,7 +1230,7 @@ margin-bottom: 1vh;
         top:-0.7vh;
     }
     #ExperiencePage{
-        min-height:230vh;
+        min-height:2000px;
     }
     #ExperiencePage h2{
         font-size:calc(1.5*(1vw + 1vh));
